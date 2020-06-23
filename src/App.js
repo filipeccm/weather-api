@@ -22,7 +22,7 @@ const App = () => {
     const fetchData = async () => {
       const inputData = city.split(' ').join('+');
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${inputData}&appid=16eb512cb5510f2d827e4166a006aaa4`
+        `https://api.openweathermap.org/data/2.5/weather?q=${inputData}&appid=16eb512cb5510f2d827e4166a006aaa4`
       )
         .then((res) => res.json())
         .then((res) => {
